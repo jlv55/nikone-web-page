@@ -1,0 +1,1044 @@
+/* ----------------------------------------------------------------------------
+   # Created by: @JLV_55
+   # Date: July 30, 2014
+   # Website: www.jlv55.com
+   # www.twitter.com/JLV_55
+   # Version: 0.1v
+   ---------------------------------------------------------------------------- */
+@font-face {
+font-family: mars;
+src: url(mars.otf);
+}
+@font-face {
+font-family: ghotic;
+src: url(ghotic.ttf);
+}
+@font-face {
+font-family: marijuana;
+src: url(marijuana.ttf);
+}
+body  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  background: url(web2.jpg);
+  background-size: 100% 100%;
+  color: white;
+}
+
+header h1 {
+  font-family: mars;
+  margin-top: 100px;
+  font-size: 7.5em;
+  margin-bottom: 45px;
+}
+header h1 strong {
+  color: #FF8300;
+  font-size: 7.5em;
+}
+
+a {
+}
+#presentation {
+	margin: 0 auto 0 auto;
+	text-align: center;
+  z-index: 999;
+  position: relative;
+  top: 335px;
+}
+#presentation img {
+  width: 200px;
+  height: 150px;
+	position: relative;
+	margin: 40px auto 15px auto;
+}
+
+#presentation strong {
+	font-size: 85px;
+}
+
+#sm {
+	width: 209px;
+	margin:  0 0 25px 29%;
+}
+
+.sm {
+	display: inline-block;
+	margin: 10px;
+}
+
+#twitter {color: #00ACED;}
+#youtube {color: #CD332D;}
+#google {color: #D14836;}
+#github {color: #4183C4; }
+#facebook {color: #3B5998;} 
+#rss {color: #FF8300;}
+#pinterest {color: #CB2027;}
+#mail {color: #FF8300}
+
+.sm {
+transition: all 0.17s ease-in-out;
+-moz-transition: all 0.17s ease-in-out;
+-webkit-transition: all 0.17s ease-in-out;
+-o-transition: all 0.17s ease-in-out;
+}
+.sm:hover {
+  transform: scale(1.2) rotate(360deg);
+  -ms-transform: scale(1.2) rotate(360deg); /* IE 9 */
+  -moz-transform: scale(1.2) rotate(360deg); /* IE 9 */
+  -webkit-transform: scale(1.2) rotate(360deg); /* Safari and Chrome */
+}
+
+#contact {
+	background-color: #fff;
+	color: black;
+	font: bold 12px/18px sans-serif;
+  	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-ms-transition: all 0.2s;
+ 	 -o-transition: all 0.2s;
+ 	 transition: all 0.2s;
+ 	 padding: 12px;
+}
+
+#contact:hover {
+	background-color: #555;
+	color: #fff;
+}
+
+/*
+#menuShot:hover {
+  background-color: #FF8300 !important
+}
+*/
+
+#mainMenu {
+	margin: -20px auto 0 auto;
+	width: 100%;
+}
+#mainMenu a {
+	color: black;
+	font: bold 12px/18px sans-serif;
+}
+
+#mainMenu ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 2px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+#mainMenu ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 15px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainMenu ul li:hover {
+  background: #555;
+  color: #fff;
+}
+#mainMenu ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+#mainMenu ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+#mainMenu ul li ul li:hover { background: #666; }
+#mainMenu ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+#ajaxLoaderContainer {
+	background-color: gray;
+	width: 100%;
+	height: auto;
+}
+
+#contentContainer {
+  /*padding: 50px 6.95% 0 6.95%;*/
+  padding-top: 60px;
+  margin: -30px auto 0px auto;
+  display: block;
+  float: none;
+}
+
+.sectiontitle {
+  text-align: center;
+  padding-top: 10px;
+}
+.sectiontitle strong {
+    font-size: 45px;
+}
+/*Inicio*/
+
+#inicio {
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
+#inicio h2 {
+  text-align: center;
+
+}
+#inicio h2 strong {
+  font-size: 45px;
+}
+#inicio p {
+  padding: 20px 10px 20px 10px;
+}
+
+#inicio .interSocial img {
+  height: 400px;
+  width: 45%;
+  float: left;
+}
+#inicio .interSocial {
+  width: 100%;
+  height: 420px;
+}
+#inicio .interSocial iframe {
+  width: 55% !important;
+}
+
+.logo {
+  z-index: 999;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0px auto 0 auto;
+  background-image: url(lojo.jpg);
+  background-size: 100% 100%;
+}
+#YTChannel {
+  height: auto;
+  width: 70%;
+  margin: 40px auto 0 auto;
+  display: block;
+  float: none;
+}
+#YTChannel p{
+  padding-left: 0px;
+  padding-top: 25px;
+}
+
+.promoInfo {text-align: center;font-size: 2.8em; width: 100%;height: 140px;}
+.promoInfo h2 {font-size: 2.5em; margin-top: 40px;}
+
+#BIRIBIBAEpromo img{
+  width: 550px;
+  height: 450px;
+  float: left;
+  padding-right: 0px;
+}
+#BIRIBIBAEpromo {
+  width: 60%;
+  height: auto;
+  margin-top: -20px;
+  display: inline-block;
+}
+#BIRIBIBAEpromo ul {
+  display: inline-block;
+}
+#BIRIBIBAEpromo p {
+  text-align: center;
+}
+#BIRIBIBAEpromo span {
+  background-color: #E86700;
+  color: white;
+  padding: 5px;
+  transition: all 0.17s ease-in-out;
+  -moz-transition: all 0.17s ease-in-out;
+  -webkit-transition: all 0.17s ease-in-out;
+  -o-transition: all 0.17s ease-in-out;
+}
+#BIRIBIBAEpromo span a {
+  color: white;
+}
+#yunero {
+  float: right;
+  padding: 10px 0px 25px 20px;
+  position: relative;
+  border:none !important;
+  border-right: none !important;
+}
+
+
+#YTVideoBackground {
+  text-align: center;
+  width: 100%;
+  height: 360px;
+  position: absolute;
+}
+
+.YTVTexto {
+  z-index: 999;
+  font-size: 55px;
+  color: #FF8300;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
+.YTVTexto span{
+  text-align: left;
+  padding: 40px 50px 0px 60px;
+  display: block;
+}
+
+#tubular-container {
+  position: absolute !important;
+}
+
+/*Multimedia*/
+
+.multiIcon {
+width: 100%;
+text-align: center;
+margin: 30px 0 20px 0;
+}
+
+#videoParallax {  background: url(papelerabyn.jpg) 50% 0 no-repeat fixed;}
+.parallax {
+  width: 100%;
+  height: 10em;
+  border-top: 1px solid;
+  border-bottom: 1px solid; 
+}
+
+/*                Social Feed yunero (plugin a la mierda)
+#socialFeed  {
+  width: 86.9%;
+  margin: 0 auto 0 auto;
+}
+
+#socialFeed div  .foot{
+  background-color: black;
+}
+*/
+/*
+#socialFeed div .content {
+  width: 100%;
+}
+#socialFeed div .content a {
+}
+#socialFeed div .content img{
+  margin: 0 auto 0 auto;
+}
+#socialFeed div  .foot{
+  width: 100%;
+}
+#socialFeed div .content div {
+  padding: 15px;
+  font-size: 1.5em;
+  width: 100%;
+}
+*/
+
+.videoContainer {
+  padding-top: 10px;
+  width: 100%;
+  height: 400px;
+  float: none;
+  display: block;
+  color: ;
+}
+#video1 {
+  background-size: 50% 100%;
+}
+#video2 {
+  background-size: 50% 100%;
+}
+#video3 {
+  background-size: 50% 100%;
+}
+
+.infoVideo {
+  display: inline-block;
+  width: 40%;
+  height: 340px;
+  margin: 30px 30px 0px 30px;
+  text-align: right;
+}
+.textleft {
+  text-align: left;
+}
+
+.infoVideo a {
+  color: #00ACED;
+
+}
+.videoReproductor {
+  width: 45%;
+  height: 340px;
+  margin: 30px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+ .videoReproductor iframe,
+ .videoReproductor object,
+ .videoReproductor embed,
+ .videoReproductor video {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 340px;
+    width: 100%;
+ }
+
+.floatleft {
+  float: left !important;
+}
+.floatright {
+  float: right;
+}
+
+
+#sliderImage {
+  width: 100%;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: 400px;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+/*Discografía*/
+.disco {
+  width: 90%;
+  margin: 40px auto 25px auto;
+  float: none;
+  display: block;
+  height: 400px;
+}
+.caratulaDisco {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 400px;
+  background: gray;
+}
+.caratulaDisco img {
+  border-radius: 100%;
+  width:  75%;
+  height: 100%;
+  float: right;
+  z-index: 1;
+}
+#BIRIBIBAE {
+  background-image: url(birica.jpg);
+  background-size: 100% 100%;
+}
+#POTATO {
+  background-image: url(potatoca.jpg);
+  background-size: 100% 100%;
+}
+#PAQUE {
+  background-image: url(paqueca.jpg);
+  background-size: 100% 100%;
+}
+.indice {
+  display: inline-block;
+  width: 35%;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.indice h3 {
+    color: #E86700;
+}
+.indice ul {
+  margin-top: 20px;
+}
+
+.indice span a{
+  background-color: #E86700;
+  color: white;
+  padding: 5px;
+    transition: all 0.17s ease-in-out;
+-moz-transition: all 0.17s ease-in-out;
+-webkit-transition: all 0.17s ease-in-out;
+-o-transition: all 0.17s ease-in-out;
+}
+
+.indice span a:hover {
+  font-size: 20px;
+}
+.titulos {
+  text-align: left;
+  margin-left: 50px;
+  font-style: italic;
+
+}
+
+.fecha {
+  width: 100%;
+}
+.fecha p {
+  text-align: center;
+  color: white;
+  width: 300px;
+  background-color: #FF8300;
+
+}
+
+/*Conciertos*/
+
+#conciertosMenu {
+  margin-top: -58px;
+  width: 100%;
+  background:#2c2c2c;
+  background-image: url(black.png);
+  height: 100px;
+}
+#conciertosMenu ul { 
+  width: 80%; 
+  margin: 0 auto 0 auto; 
+  text-align: center;
+  padding: 40px;
+}
+#conciertosMenu ul li {
+ display: inline-block;
+ font-size: 40px;
+ color: #FF8300;;
+}
+#conciertosMenu ul li a {
+  font-family: ghotic;
+  font-size: 55px;
+  color: white;
+  transition: all 0.17s ease-in-out;
+-moz-transition: all 0.17s ease-in-out;
+-webkit-transition: all 0.17s ease-in-out;
+-o-transition: all 0.17s ease-in-out;
+}
+#conciertosMenu ul li a:hover {
+  font-size: 75px;
+}
+#listaConciertosContainer {
+  width: 100%;
+  height: auto;
+}
+.conciertos {
+  padding: 7%;
+  height: 1800px;
+}
+.concierto {
+  width: 95%;
+  margin: 0 auto 80px auto;
+  height: auto;
+  display: block;  
+  padding: 50px;
+}
+.concierto img {
+  width: auto;
+  height: 500px;
+  float: left;
+  padding: 40px 40px 0 0; 
+}
+.cInfo {
+  padding: 20px 0px 0px 20px;
+  float: left;
+}
+.cInfo h3 {
+}
+.cInfo span {}
+.cInfo span strong {
+}
+.cInfo p {}
+.cSocial {}
+.cInfo {}
+
+.concierto .littleniko {width: 300px; height: 400px; float: left;}
+
+/*Instagram feed*/
+
+.instaInner {
+  position:relative;
+}
+
+
+.insta{
+    color: #ffffff;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+  margin-left: -145px;
+    top: 0;
+    width: 288px;
+    z-index: 999;
+}
+
+
+.instaTitle {
+    color: #ffffff;
+    height: 100%;
+    left: 50%;
+    margin-left: -145px;
+    margin-top: -30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 288px;
+    z-index: 999;
+}
+
+.insta i{
+  font-size:30px;
+}
+
+.insta h3{
+  color:#ffffff;
+  text-transform:none;
+  margin-top: 10px;
+}
+
+.instaFeed {
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+.instaFeed li ,.instaFeed li a{
+  position:relative;
+  display:inline;
+  width:10%;
+  
+}
+
+
+.instaFeed li a{
+  display:inline-block;
+
+  
+}
+
+.instaFeed li img {
+  display:inline-block;
+  width:100%;
+  
+  
+}
+
+
+.instaFeed li a:before{
+    background: rgba(36, 36, 36, 0.7);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  left:0;
+  top:0;
+  z-index:0;
+  display: block
+}
+
+.instaFeed li a:hover:before{
+  background: rgba(36, 36, 36, 0);
+}
+
+/*End instagram feed*/
+ 
+ .proximamente {
+  text-align: center;
+  font-size: 4em;
+  padding: 200px 0 200px 0;
+  width: 100%;
+  color: black;
+  margin-bottom: -10px;
+ }
+
+
+footer {
+  width: 100%;
+  background:#2c2c2c;
+  background-image: url(black.png);
+  color: black;
+  display: block;
+  height: auto;
+  float: none;
+  border-top: solid 1px;
+  padding-bottom: 10px;
+  position: relative;
+}
+footer a{
+  color: white;
+}
+footer .logo {
+  margin-left: 15px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-image: url(logo.jpg);
+  background-size: 100% 100%;
+}
+footer ul {
+  width: auto;
+}
+footer ul li {
+  list-style: none;
+  padding: 10px;
+  color: white;
+}
+
+footer p {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+}
+
+footer a img {
+  width: 24px;
+  height: 24px;
+}
+#footcnt {
+  padding-top: 15px;
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 200px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  }
+#infocnt {
+  width: 70%;
+  height: 200px;
+  float: left;
+}
+#tweets {
+  width: auto;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+#tweets {
+  font-size:12px;
+  line-height:16px;
+  color: white;
+}
+#tweets span {
+  display: block;
+  font-size: 12px;
+}
+
+#tweets a {
+  color: #0969A2;
+}
+
+#tweets ul li a img{
+  float: left;
+  border-radius: 100%;
+  margin-top: -15px;
+}
+
+.tweets_txt {
+  color: white;
+}
+#videosPromo {
+  background: url(papebyn.jpg) 50% 0 no-repeat fixed;
+  padding: 20px 0 20px 0;
+    height: 400px;
+
+}
+.subRegular {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+.listaReproduccion {
+  width: 30%;
+  float: left;  
+  padding: 80px 0 50px 0;
+}
+.listaReproduccion ul li {
+  margin: 10px 0 10px 0;
+  color: black;
+  list-style: none;
+}
+.listaReproduccion ul li a {
+  color: black;
+}
+
+.videos {
+  width: 100%;
+}
+.videoReproductoor {
+  width: 60%;
+  height: 340px;
+  margin: 30px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.mainVideoReproductor {
+  width: 50%;
+  height: 340px;
+  float: none;
+  overflow: hidden;
+  position: relative;
+  margin: 40px auto 80px auto;
+}
+ .videoReproductoor iframe,
+ .videoReproductoor object,
+ .videoReproductoor embed,
+ .videoReproductoor video {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 340px;
+    width: 100%;
+ }
+
+ #mainVideo h2 {
+  text-align: center;
+  padding: 50px 0 0 0;
+ }
+ #mainVideo {
+  background: url(con.jpg) 50% 0 no-repeat fixed;
+  padding-bottom: 50px;
+  margin-top: -10px; 
+ }
+ #mIframe {
+  width: 100%;
+  height: 340px;
+ }
+
+
+
+/*iPad lanscape*/
+@media screen and (max-device-width: 960px) and (min-width: 1000px) and (max-width: 1030px){
+  .caratulaDisco {width: 70%;}
+  .indice {width: 20%;}
+  #socialFeed  {width: 86.9%;}
+  #YTChannel { width: 90%;}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .promoInfo {font-size: 2em;}
+.promoInfo h2 {font-size: 1.7em;}
+
+  #YTChannel { width: 99%;}
+#sm {
+  margin: 0 0 25px 27%;
+}
+
+  #inicio .interSocial img {width: 100%;float: none;}
+  #inicio .interSocial { width: 100%; height: auto;}
+  #inicio .interSocial iframe { width: 100% !important;}
+
+  #socialFeed  {width: 665px;}
+  .videoContainer {padding-top: 25px; padding-bottom: 25px; height: auto; background-size: 100% 100% !important;}
+  .infoVideo { display: block; width: 60%; height: auto; margin: 0 auto 0 auto; text-align: center;   padding: 0 0 0 0; position: relative;}
+  .videoReproductor { display: block; float: none; width: 60%; margin: 0 auto 0 auto;}
+  .floatleft {float: none !important;}
+
+    .caratulaDisco {width: 70%;}
+  .indice {width: 20%;}
+
+  .subRegular {width: 90%;}
+  .videos {width: 100%;}
+  .listaReproduccion {display: inline-block;}
+  .videoReproductoor {
+  width: 60%;
+  height: 340px;
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.mainVideoReproductor {
+  width: 60%;
+  height: 340px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  #sm {margin: 0 0 25px 24%; }
+  #mainMenu ul li {
+  display: block;
+  margin-right: -4px;
+  padding: 15px 15px;
+}
+    #YTChannel { width: 99%; }
+    #BIRIBIBAEpromo {display: block; float: none; width: 80%; margin: 0 auto 0 auto; height: auto;}
+    #yunero {float: none; padding: 0px; margin: 0px;}
+  .promoInfo {font-size: 2em;}
+.promoInfo h2 {font-size: 1.7em;}
+
+  #inicio {width: 80%;}
+  #inicio .interSocial img {width: 100%;float: none;}
+  #inicio .interSocial { width: 100%; height: auto;}
+  #inicio .interSocial iframe { width: 100% !important;}
+  #socialFeed  {width: 440px;}
+  .videoContainer {padding-top: 25px; padding-bottom: 25px; height: auto;  background-size: 100% 100% !important;}
+  .infoVideo { display: block; width: 75%; height: auto; margin: 0 auto 0 auto; text-align: center;   padding: 0 0 0 0; position: relative;}
+  .videoReproductor { display: block; float: none; width: 75%; margin: 0 auto 0 auto;}
+  .floatleft {float: none !important;}
+  .insta {height: 10%;left: 0;padding-top: 220px;width:100%;margin-left: 0;}
+  .instaFeed li, .instaFeed li a{width:100%;}
+
+  .caratulaDisco {width: 60%;height: 350px;}
+  .indice {width: 30%;}
+
+#infocnt {width: 60%; height: 220px}
+#footcnt {height: 240px;}
+  .conciertos {height: 4600px; padding: 0%;}
+  .concierto .littleniko { display: block; float: none; margin: 0 auto 0 auto;}
+  .concierto {padding-right: 0px; padding-left: 0px; width: 100%;}
+  .subRegular {width: 100%;}
+  #videosPromo {height: 500px;}
+  .videoReproductoor { margin: 0px; float: none; width: 100%;}
+  .videos {width: 90%; margin: 0 auto 0 auto; display: block; float: none;}
+  .listaReproduccion { width: 90%; margin: 0 auto 0 auto; display: block; float: none; padding: 0px;}
+  .listaReproduccion ul li {display: inline-block; padding: 10px 0px 0 0px; font-size: 0.8em;}
+  .mainVideoReproductor {
+  width: 70%;
+  height: 340px;
+}
+
+}
+@media only screen and (max-width: 550px) {
+    #yunero {float: none; padding: 0px; margin: 0px;}
+      .promoInfo {font-size: 2em;}
+.promoInfo h2 {font-size: 1.7em;}
+    #BIRIBIBAEpromo {display: block; float: none; width: 100%; }
+    .disco {height: auto;}
+    .caratulaDisco {width: 100%;height: 350px;}
+    .indice {width: 100%; margin: 0 auto 0 auto; text-align: center; padding: 0 0 0 0;}
+    .indice ul li {list-style: none;}
+    .indice ul {text-align: center; margin: 0 0 20px 0; width: 100%;}
+    #footcnt {  width: 100%; height: 450px; }
+    footer .logo { margin:  0 auto 0 auto; float: none; display: block;}
+    #infocnt {width: 90%;height: 200px;float: none; display: block; margin: 0 auto 0 auto;}
+    footer ul li {text-align: center; padding-left: 0px; padding-right: 0px;}
+    footer ul {margin-left: 0px; }
+    .listaReproduccion {width: 100%;}
+    .listaReproduccion ul {width: 290px; margin: 0 auto 0 auto;}
+    .mainVideoReproductor { width: 80%; height: 340px;}
+
+  .rslides {
+  height: auto;
+  }
+.rslides img {
+  height: auto;
+  }
+  .concierto {
+  width: 100%;
+  margin: 0 auto 20px auto;
+  height: auto;
+}
+  .concierto img {
+    padding-bottom: 20px;
+  }
+}
+
+
+@media only screen and (max-width:479px) {
+  #sm {margin: 0 auto 25px auto;}
+    .promoInfo {font-size: 1.5em;}
+.promoInfo h2 {font-size: 1.2em;}
+  #BIRIBIBAEpromo {display: block; float: none; width: 100%; margin: 0 auto 0 auto; height: auto;}
+  #BIRIBIBAEpromo img {display: block; margin: 0 auto 0 auto; width: 100%; height: 350px; padding: 0px;}
+  #BIRIBIBAEpromo p {padding-top: 0px; margin-top: -10px; text-align: center;}
+  #BIRIBIBAEpromo h3 {text-align: center; padding-top: 10px;}
+  #BIRIBIBAEpromo ul li {text-align: center; list-style: none;}
+  #BIRIBIBAEpromo ul {margin: 0px;}
+  #inicio {width: 90%;}
+  #inicio .interSocial img {width: 100%;float: none;}
+  #inicio .interSocial { width: 100%; height: auto;}
+  #inicio .interSocial iframe { width: 100% !important;}
+
+  #socialFeed  {width: 215px;}
+  .videoContainer {padding-top: 25px; padding-bottom: 25px; height: auto;  background-size: 100% 100% !important;}
+  .infoVideo { display: block; width: 90%; height: auto; margin: 0 auto 0 auto; text-align: center;   padding: 0 0 0 0; position: relative;}
+  .videoReproductor { display: block; float: none; width: 90%; margin: 0 auto 0 auto;}
+  .floatleft {float: none !important;}
+  .insta {height: 10%;left: 0;padding: 135px 0 0 0;width:100%;margin-left: 0;}
+  .instaFeed li, .instaFeed li a{width:100%;}
+  .listaReproduccion ul li p {}
+
+.subRegular {width: 90%; margin: 0 auto 0 auto;}
+  .videos {width: 100%;}
+  .listaReproduccion {display: inline-block;}
+  .videoReproductoor {
+  width: 90%;
+  height: 320px;
+  margin: 0 auto 0 auto;
+  float: none;
+  overflow: hidden;
+  position: relative;
+}
+.mainVideoReproductor {
+  width: 90%;
+  height: 340px;
+}
+
+}
+

@@ -1,0 +1,168 @@
+@font-face {
+font-family: ghotic;
+src: url(ghotic.ttf);
+}
+
+header {
+	background: url(rojobyn.jpg) 50% 0 no-repeat fixed;
+}
+ul li {
+		list-style: none;
+}
+.regularContainer {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 0 0 0;
+	background-color: black
+}
+#videoSlider {
+	width: 100%;
+	height: auto;
+	display: block;
+	padding: 70px 0 70px 0;
+}
+.caratula {
+	width: 500px;
+	height: 400px;
+	margin: 0 auto 0 auto;
+	background-image: url(birica.jpg);
+	background-size: 100% 100%;
+}
+.conciertosMenu {
+  width: 100%;
+  background:black;
+  height: 100px;
+}
+.conciertosMenu ul { 
+  width: 80%; 
+  margin: 0 auto 0 auto; 
+  text-align: center;
+  padding: 40px;
+}
+
+.conciertosMenu ul li  {
+  font-family: ghotic;
+  font-size: 45px;
+  color: white;
+  transition: all 0.17s ease-in-out;
+-moz-transition: all 0.17s ease-in-out;
+-webkit-transition: all 0.17s ease-in-out;
+-o-transition: all 0.17s ease-in-out;
+}
+.conciertosMenu ul li:hover {
+  font-size: 50px;
+}
+#descripcion {
+	width: 60%;
+	margin: 0 auto 0 auto;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+p {
+	text-align: center;
+	color: white;
+}
+.logo {
+	background: url(logo.jpg);
+	background-size: 100% 100%;
+	width: 450px;
+	height: 400px;
+	margin: 0px auto 40px auto;
+}
+
+
+a {
+	color: #CD332D;
+}
+footer {
+  width: 100%;
+  background:black;
+  background-image: url(concas.jpg) 50% 0 no-repeat fixed;
+  color: black;
+  display: block;
+  height: auto;
+  float: none;
+  border-top: solid 1px;
+  padding-bottom: 20px;
+  position: relative;
+}
+footer a {
+	color: #ff8300;
+}
+footer p {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+}
+
+footer a img {
+  width: 24px;
+  height: 24px;
+}
+
+#videosPromo {
+	height: 400px;
+	background: url(papebyn.jpg) 50% 0 no-repeat fixed;
+	padding: 20px 0 20px 0;
+}
+.subRegular {
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+.listaReproduccion {
+	width: 30%;
+	float: left;	
+	padding: 80px 0 0 50px;
+}
+
+.videos {
+	height: 340px;
+	float: left;
+	width: 60%;
+}
+.videoReproductor {
+  width: 100%;
+  height: 340px;
+  margin: 30px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+ .videoReproductor iframe,
+ .videoReproductor object,
+ .videoReproductor embed,
+ .videoReproductor video {
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 340px;
+    width: 100%;
+ }
+@media only screen and (max-width: 1097px) {
+	.conciertosMenu ul li {font-size: 40px;}
+	.conciertosMenu ul li:hover {font-size: 55px;}
+}
+@media only screen and (max-width: 630px) {
+	.subRegular {width: 100%;}
+	.videos { width: 65%;}
+	.listaReproduccion {font-size: 0.9em;width: 25%;}
+	.listaReproduccion li {	padding-bottom: 10px;}
+	.conciertosMenu ul li {font-size: 30px;}
+	.conciertosMenu ul li:hover {font-size: 40px;}
+}
+@media only screen and (max-width: 500px) {
+	.logo {width: 100%; height: 250px;}
+	#videosPromo {height: 420px;}
+	.videoReproductor { margin: 0px; float: none;}
+	.videos {width: 90%; margin: 0 auto 0 auto; display: block; float: none;}
+	.listaReproduccion { width: 90%; margin: 0 auto 0 auto; display: block; float: none; padding: 0px;}
+	.listaReproduccion ul li {display: inline-block; padding: 5px;}
+}
+@media only screen and (max-width: 500px) {
+	.caratula {
+		width: 95%;
+		height: 350px;
+	}
+}
